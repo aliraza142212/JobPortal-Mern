@@ -27,8 +27,9 @@ app.get("/", (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 5000;
+// Default Port 7860 aur Host '0.0.0.0' zaroori hai
+const PORT = process.env.PORT || 7860;
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
